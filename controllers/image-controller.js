@@ -2,7 +2,7 @@ import Image from '../models/Image.js';
 import uploadtoCloudinary from '../helpers/cloudinaryhelper.js';
 import cloudinary from '../config/cloudinary.js';
 
-const imagecontroller = async(req,res)=>{
+export const imagecontroller = async(req,res)=>{
 
 
   try {
@@ -64,7 +64,7 @@ const {url, publicId} = await uploadtoCloudinary(req.file.path);
 
 }
 
-const fetchImagesController = async(req,res)=>{
+export const fetchImagesController = async(req,res)=>{
 
   
    // Fetching & Pagination & Sorting the Images 
