@@ -88,7 +88,7 @@ export const fetchImagesController = async(req,res)=>{
 
 
 
-  const images = Image.find().sort(sortObj).skip(skip).limit(limit);
+  const images = await Image.find().sort(sortObj).skip(skip).limit(limit);
 
 
 
@@ -185,9 +185,3 @@ export const  deleteImageController = async(req,res)=>{
 }
 
 
-
-export {
-  imagecontroller,
-  deleteImageController,
-  fetchImagesController
-};
