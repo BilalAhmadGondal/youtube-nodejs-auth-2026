@@ -4,9 +4,9 @@ import authMiddleware  from '../middleware/auth-middleware.js';
 
 import adminMiddleware  from '../middleware/admin-middleware.js';
 import uploadmiddleware from '../middleware/upload-middleware.js';
-import imagecontroller from '../controllers/image-controller.js';
-import deleteImageController from '../controllers/image-controller.js';
-import fetchImagesController from '../controllers/image-controller.js';
+import {imagecontroller} from '../controllers/image-controller.js';
+import {deleteImageController} from '../controllers/image-controller.js';
+import {fetchImagesController} from '../controllers/image-controller.js';
 
 
 const router = express.Router()

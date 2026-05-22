@@ -186,4 +186,8 @@ export const  deleteImageController = async(req,res)=>{
 
 
 
-module.exports = {imagecontroller, deleteImageController, fetchImagesController };
+export {
+  imagecontroller,
+  deleteImageController,
+  fetchImagesController
+};
